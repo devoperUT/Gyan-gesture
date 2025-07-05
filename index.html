@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Gyan 🌸</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 2rem;
+      color: #444;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #ff69b4;
+      margin-bottom: 1rem;
+    }
+    section {
+      margin: 1.5rem auto;
+      padding: 1rem;
+      border-radius: 20px;
+      background-color: #ffe4ec;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 90%;
+    }
+    button {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    #secretMessage, #memoryText, #countdown {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    audio {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi Miss Gyan 👋</h1>
+  <p>You’ve entered a no-stress, high-vibe zone. Smile before you scroll 😏</p>
+
+  <section>
+    <h2>Period Mode Activated 🩸</h2>
+    <p>🍫 Virtual chocolate<br>🧘‍♀️ Imaginary hot water bag<br>🎥 Random mood-lifter reel<br>🐒 Utsav's patented bakchodi (always ready to serve)</p>
+  </section>
+
+  <section>
+    <h2>If I Were Your BF 🤔💭</h2>
+    <ul style="text-align: left; display: inline-block; max-width: 90%;">
+      <li>Would’ve made a cringe song for your cramps</li>
+      <li>Made you tea, burnt it, then ordered some</li>
+      <li>Googled “How to massage soul through WiFi”</li>
+      <li>Fought your uterus personally (and lost)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mood Fixer Zone 🎈</h2>
+    <button onclick="alert('Here’s a random meme 😛')">Make me laugh</button><br>
+    <button onclick="alert('Utsav says: You are the cutest distraction 😅')">Say something stupid</button><br>
+    <button onclick="alert('Sending attention: 🫶🫶🫶')">Give me attention</button>
+  </section>
+
+  <section>
+    <h2>🔐 Secret Message</h2>
+    <button onclick="document.getElementById('secretMessage').style.display='block'">Click to Reveal</button>
+    <div id="secretMessage">
+      <p>You matter to me. <br>
+      Not just on your good days, or when you’re smiling — but even when things are tough, or when you don’t feel like talking.<br><br>
+      I don’t know if what I feel is love — maybe it is, maybe it's becoming that slowly — but what I *do* know is:<br>
+      I genuinely care for you. A lot. And I just… want you to be happy.<br><br>
+      I hope one day, I get to visit Kerala with you again. Walk beside you, explore quiet temples, and watch the sun set behind coconut trees — all with no pressure, no pretenses… just *us* being real.<br><br>
+      Until then, this silly little website is just my way of saying:<br>
+      *You’re important to me. And you’re not alone.*</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎵 A Little Surprise</h2>
+    <p>Play this when you need a smile:</p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>⏳ Countdown to Our Imaginary Kerala Trip</h2>
+    <button onclick="document.getElementById('countdown').style.display='block'; startCountdown()">Reveal Countdown</button>
+    <div id="countdown"></div>
+  </section>
+
+  <section>
+    <h2>📸 A Memory I Cherish</h2>
+    <button onclick="document.getElementById('memoryText').style.display='block'">Click to Read</button>
+    <div id="memoryText">
+      <p>Yr gyanvee hm log khuch din se baat kr rahe hain and mai sach me ye saare moments 1000 kya unlimited times repeat krna chahata hoon and i am so damn seriuos about you ,may be we do not get along but i love the path which we cover together so i am so happy to have you and you are like one of the reasons which gives me smile and i hope i can be the same reason for you ,so while reading this just smile once for meeee THANKSSSSSSS i khow tm smile ki thanksss</p>
+    </div>
+  </section>
+
+  <script>
+    function startCountdown() {
+      const countDownDate = new Date("Dec 25, 2025 00:00:00").getTime();
+      const countdownEl = document.getElementById("countdown");
+      const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.innerHTML = `Only ${days}d ${hours}h ${minutes}m ${seconds}s left until ✈️ Kerala 🌴`;
+
+        if (distance < 0) {
+          clearInterval(x);
+          countdownEl.innerHTML = "It's time to go! Let’s pack!";
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
