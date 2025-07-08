@@ -1,153 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>For Gyan 🌸</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Gyanvee 🌸</title>
   <style>
     body {
-      background: #fff0f5;
-      font-family: 'Comic Sans MS', cursive;
-      text-align: center;
-      padding: 2rem;
-      color: #444;
       margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fceff9, #ffe0e9);
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+      text-align: center;
     }
+
     h1 {
-      font-size: 2.2rem;
-      color: #ff69b4;
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      color: #e75480;
+      margin-top: 1.5rem;
     }
+
     section {
-      margin: 1.5rem auto;
-      padding: 1rem;
+      background-color: #fff;
       border-radius: 20px;
-      background-color: #ffe4ec;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      max-width: 90%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 90%;
+      max-width: 800px;
+      transition: transform 0.3s ease;
     }
+
+    section:hover {
+      transform: scale(1.02);
+    }
+
     button {
-      background-color: #ffb6c1;
+      background: #ff85a2;
       border: none;
-      padding: 0.8rem 1.5rem;
+      padding: 0.8rem 2rem;
       border-radius: 30px;
+      color: white;
       font-size: 1rem;
       cursor: pointer;
       margin-top: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: all 0.2s ease;
     }
+
     button:hover {
-      background-color: #ff91a4;
-      transform: scale(1.05);
-      transition: all 0.2s ease-in-out;
+      background: #ff4d6d;
+      transform: scale(1.1);
     }
+
+    iframe, audio {
+      margin-top: 1rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+    }
+
     #secretMessage, #memoryText, #countdown {
       display: none;
       margin-top: 1rem;
       padding: 1rem;
-      background-color: #fff;
-      border-radius: 10px;
-      border: 1px solid #ccc;
+      background-color: #fff7fb;
+      border-radius: 15px;
+      border: 1px solid #ddd;
     }
-    audio {
+
+    ul {
+      text-align: left;
       margin-top: 1rem;
-      width: 100%;
-      max-width: 300px;
+      padding-left: 20px;
     }
-    @media screen and (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-      button {
-        font-size: 0.9rem;
-        padding: 0.7rem 1.2rem;
-      }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .pulse {
+      animation: pulse 2s infinite;
     }
   </style>
 </head>
 <body>
-  <h1>Hi Miss Gyan 👋</h1>
+  <h1 class="pulse">Hi Miss Gyan 👋</h1>
   <p>You’ve entered a no-stress, high-vibe zone. Smile before you scroll 😏</p>
 
   <section>
     <h2>Period Mode Activated 🩸</h2>
-    <p>🍫 Virtual chocolate<br>🧘‍♀️ Imaginary hot water bag<br>🎥 Random mood-lifter reel<br>🐒 Patented bakchodi (always ready to serve)</p>
+    <p>🍫 Virtual chocolate<br>🧘‍♀️ Imaginary hot water bag<br>🎥 Mood-lifter reel<br>🐒 Patented bakchodi (unlimited)</p>
   </section>
 
   <section>
     <h2>If I Were Your BF 🤔💭</h2>
-    <ul style="text-align: left; display: inline-block; max-width: 90%;">
-      <li>Would’ve made a cringe song for your cramps</li>
-      <li>Made you tea, burnt it, then ordered some</li>
-      <li>Googled “How to massage soul through WiFi”</li>
-      <li>Declared war on cramps (but lost dramatically)</li>
+    <ul>
+      <li>Cringe song for your cramps (yes, I would!)</li>
+      <li>Tea attempt → Fail → Order food 🍵</li>
+      <li>Google: "Massage soul via WiFi" 🫠</li>
+      <li>Dramatic war on cramps (and lose!)</li>
     </ul>
   </section>
 
   <section>
     <h2>Mood Fixer Zone 😌</h2>
-
-    <button onclick="alert(`9 AM: Don’t touch me.
-10 AM: Where’s my food.
-11 AM: I want to cry but also laugh but also punch someone.
-12 PM: You, entertain me or I’ll delete you from Earth. 😭`)">
-      Gyanvee Mood-o-Meter During Periods
-    </button>
-    <br><br>
-
-    <button onclick="alert(`⁠Breaking News 🗞️:
-Gyanvee has officially declared a nationwide strike. Demands include:
-
-🍫 Unlimited chocolate  
-👀 A boyfriend who sends memes every 2 hours  
-🎵 A hot water bag with a Spotify playlist  
-💃 Someone dancing in a towel like Govinda`)">
-      Make me laugh
-    </button>
-    <br><br>
-
-    <button onclick="alert('Roses are red, moods swing like a sword, someone feed this queen before she gets bored.')">Note for you</button><br>
-    <button onclick="alert('Utsav says: You are the cutest distraction 😅')">Say something stupid</button><br>
-    <button onclick="alert('Sending attention: 🫶🫶🫶')">Give me attention</button>
+    <button onclick="showAlert1()">Gyanvee Mood-o-Meter</button>
+    <button onclick="showAlert2()">Make me laugh</button>
+    <button onclick="showAlert3()">Note for you</button>
+    <button onclick="showAlert4()">Say something stupid</button>
+    <button onclick="showAlert5()">Give me attention</button>
   </section>
 
   <section>
     <h2>🔐 Secret Message</h2>
-    <button onclick="document.getElementById('secretMessage').style.display='block'">Click to Reveal</button>
+    <button onclick="toggle('secretMessage')">Click to Reveal</button>
     <div id="secretMessage">
-      <p>You matter to me. <br>
-      Not just on your good days, or when you’re smiling — but even when things are tough, or when you don’t feel like talking.<br><br>
-      I don’t know if what I feel is love — maybe it is, maybe it's becoming that slowly — but what I *do* know is:<br>
-      I genuinely care for you. A lot. And I just… want you to be happy.<br><br>
-      I hope one day, I get to visit Kerala with you again. Walk beside you, explore quiet temples, and watch the sun set behind coconut trees — all with no pressure, no pretenses… just *us* being real.<br><br>
-      Until then, this silly little website is just my way of saying:<br>
-      *You’re important to me. And you’re not alone.*</p>
+      <p>You matter to me. On your best days and your worst. I care. A lot. I hope one day we explore Kerala together again — peacefully, happily, just us.</p>
     </div>
   </section>
 
-<section>
-  <h2>🎵 A Little Surprise</h2>
-  <p>Play this when you need a smile:</p>
-  <iframe width="300" height="180" src="https://www.youtube.com/embed/nyuo9-OjNNg?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+  <section>
+    <h2>🎵 A Little Surprise</h2>
+    <p>Play this when you need a smile:</p>
+    <iframe width="300" height="180" src="https://www.youtube.com/embed/nyuo9-OjNNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
 
   <section>
     <h2>⏳ Countdown to Our Imaginary Kerala Trip</h2>
-    <button onclick="document.getElementById('countdown').style.display='block'; startCountdown()">Reveal Countdown</button>
+    <button onclick="toggle('countdown'); startCountdown()">Reveal Countdown</button>
     <div id="countdown"></div>
   </section>
 
   <section>
     <h2>📸 A Memory I Cherish</h2>
-    <button onclick="document.getElementById('memoryText').style.display='block'">Click to Read</button>
+    <button onclick="toggle('memoryText')">Click to Read</button>
     <div id="memoryText">
-      <p>Yr gyanvee hm log khuch din se baat kr rahe hain and mai sach me ye saare moments 1000 kya unlimited times repeat krna chahata hoon and i am so damn seriuos about you ,may be we do not get along but i love the path which we cover together so i am so happy to have you and you are like one of the reasons which gives me smile and i hope i can be the same reason for you ,so while reading this just smile once for meeee THANKSSSSSSS i khow tm smile ki thanksss</p>
+      <p>Honestly, these moments mean the world to me. I’d replay them a thousand times. You're one of the reasons I smile daily. So smile once for me too 🙂</p>
     </div>
   </section>
 
+  <footer>
+    Made with ❤️ for Gyanvee — Because you deserve a little extra 🌸
+  </footer>
+
   <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function showAlert1() {
+      alert(`9 AM: Don't touch me.\n10 AM: Feed me.\n11 AM: Laugh/cry/punch mood.\n12 PM: Entertain me or I'll delete you.`);
+    }
+
+    function showAlert2() {
+      alert(`Breaking News 🗞️:\nGyanvee demands:\n🍫 Endless chocolate\n👀 Meme updates\n🎵 Hot water bag with music\n💃 Govinda towel dance`);
+    }
+
+    function showAlert3() {
+      alert('Roses are red, moods swing like swords, feed this queen before she gets bored.');
+    }
+
+    function showAlert4() {
+      alert('Utsav says: You are the cutest distraction 😅');
+    }
+
+    function showAlert5() {
+      alert('Sending attention... 🫶🫶🫶');
+    }
+
     function startCountdown() {
       const countDownDate = new Date("Dec 25, 2025 00:00:00").getTime();
       const countdownEl = document.getElementById("countdown");
